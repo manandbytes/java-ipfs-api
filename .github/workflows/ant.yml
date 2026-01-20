@@ -19,6 +19,6 @@ jobs:
         distribution: temurin
         java-version: 11
     - name: Install and run ipfs
-      run: ./install-run-ipfs.sh
+      uses: hoverkraft-tech/compose-action@2.4.3
     - name: Build & run tests with Maven
       run: mvn test
