@@ -18,6 +18,7 @@ jobs:
       with:
         distribution: temurin
         java-version: 11
+        cache: maven
     - name: Install and run IPFS
       uses: hoverkraft-tech/compose-action@v2.4.3
     - name: Build & run tests with Maven
